@@ -1,18 +1,27 @@
 body {
     background-color: lightblue;
 }
+
 h1 {
     color: white;
     text-align: center;
 }
+
 txt {
     font-family: verdana;
     font-size: 20px;
     text-align: center;
 }
+
 li  {
     font-family: verdana;
     font-size: 20px;
+    text-align: center;
+}
+
+h2  {
+    font-family: verdana;
+    font-size:20px;
     text-align: center;
 }
 
