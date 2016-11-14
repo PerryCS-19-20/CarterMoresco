@@ -1,0 +1,24 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Changing Colors</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function changeColor(colorName){
+                document.body.style.backgroundColor = colorName;
+            }
+        </script>
+        <style>
+            span{
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Hi my name is Carter. My favorite colors are <span onmouseover=changeColor("orange")>orange</span>, <span onmouseover=changeColor("blue")>blue</span>, and <span onmouseover=changeColor("pink")>pink</span></h1>
+    </body>
+</html>
