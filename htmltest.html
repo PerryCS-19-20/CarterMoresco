@@ -4,15 +4,14 @@
         <title>Hopefully this works</title>
         <script>
             function testHTML(){
-                var userInput = document.body.getElementById("inputText")
-                getElementById=("span")= userInput.value;
+                var userInput = document.getElementById("inputText")
+                document.getElementById("span").innerHTML= userInput.value;
             }
         </script>
     </head>
     <body>
         <textarea rows="10" cols="80" id="inputText"></textarea>
-        <button onclick="testHTML();
-                ">TEST!</button>
-        <span id="spam"></span>
+        <button onclick="testHTML()">TEST!</button>
+        <span id="span"></span>
     </body>
 </html>
