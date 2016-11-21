@@ -6,9 +6,9 @@
         <script>
             function addItems(){
                 var node = document.createElement("LI");
-                var textnode = document.body.getElementById("inputText");
-                node.appendChild(textnode);
-                document.body.getElementById(list).appendChild(node);
+                var textnode = document.getElementById("inputText");
+                node.textContent = textnode.value;
+                document.getElementById("list").appendChild(node);
             }
         </script>
     </head>
