@@ -35,11 +35,33 @@ h3 {
 
 h4 {
     font-family: verdana;
-    color: pink;
+    color: aqua;
     text-align: center;
 }
 
 table{
     color:greenyellow;
 }
+
+a:link {
+    color: ghostwhite;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: lightskyblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: lightskyblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 
