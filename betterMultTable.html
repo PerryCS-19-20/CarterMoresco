@@ -17,26 +17,45 @@
       <body onload="buildTimesTable()">
           
           <h1>Multiplication Table</h1>
-        Table Width:<input type="range" id="tableWidth" min="1" max="20" value="10" onchange ="buildTimesTable();"><br>
-        
+          <h3>Table Width:</h3><input type="range" id="tableWidth" min="1" max="21" value="10" onchange ="buildTimesTable();"><br>
+          <h3>Table Height:</h3><input type="range" id="tableHeight" min="1" max="21" value="10" onchange ="buildTimesTable();"><br>
+
         <script>
             function buildTimesTable() {
-                // Remove the multiplication table if it already exists.
+                //Remove the multiplication table if it already exists.
                 var timesTable = document.getElementById("timesTable");
                 if (timesTable != null) {
-                    timesTable.parentNode.removeChild(timesTable);        
+                    timesTable.parentNode.removeChild(timesTable);
                 }
-
-                // Create a table for the multiplication table
-                timesTable = document.createElement("table");
-                timesTable.id = "timesTable";            
                 
-                // Add the table to the document's body
+                //Create a table for multiplication table
+                timesTable = document.createElement("table");
+                timesTable.id = "timesTable";
+                
+                //Add the table to the document's body
                 var body = document.body;
                 body.appendChild(timesTable);
                 
-                // Get the table width and height
-                var width = document.getElementById("tableWidth").value;
+                //Get the table width and height
+                var tableWidth = document.getElementById("tableWidth").value;
+                var tableHeight = document.getElementById("tableHeight").value;
+                
+                //Fill in multiplication table
+                for(var i = 1; i < tableHeight; i++) {
+                    var row = document.createElement("tr");
+                    timesTable.appendChild(row);
+                    
+                    
+                    for(var j = 1; j < tableWidth; j++) {
+                        var columns = document.createElement("td");
+                        row.appendChild(columns);
+                        columns.textContent = i * j;
+                        if (j % 3 == 0 && 1 && 2 && 3) {
+                            columns.style.backgroundColor="red";     
+                        }
+                    }
+                }
+            }
         </script>
     </body>
 </html>
